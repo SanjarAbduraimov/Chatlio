@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background:url(../image/bg.jpg) no-repeat center ;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.651);
+    z-index: -1;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center top;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+nav {
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid #777;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    min-width: 1200px;
+
+}
+
+#logo > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+}
+#logo {
+    width: 20%;
+}
+
+#main-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#nav-link {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+#nav-link li {
+    margin: 0 20px;
+}
+
+#auth-link {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#auth-link li:first-child {
+    margin-right: 30px;
+}
+
+#sign-up-btn {
+    background: rgb(255, 255, 255);
+    color: rgb(41, 15, 190);
+    padding: 7px 20px;
+    border-radius: 15.5px;
+    border-bottom-right-radius: 0;
+}
+
+
+#sign-up-btn:hover {
+    background: rgb(41, 15, 190);
+    color: rgb(255, 255, 255)
+}
+/* #bars {
+    font-size: 35px;
+    display: none;
+} */
+
+/* @media screen and (max-width: 922px) {
+    #bars {
+        display: block;
+    }
+    #main-link {
+        display: none;
+    }
+    
+} */
+
+a {
+    padding: 16px;
+    font-size: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #333;
+    border-radius: 28px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: left;
+    margin: 150px auto 50px 100px ;
+}
+
+#text div h1{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#text  p {
+    line-height: 35px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    color: #fff;
+}
